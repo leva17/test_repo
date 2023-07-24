@@ -22,10 +22,12 @@ dataset = read_csv(url, names=names)
 # print(dataset.head(20))
 # dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
 # pyplot.show()
-print(dataset.describe())
-
-
-
+#print(dataset.describe())
+#print(dataset.groupby('class').size())
+#dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+#pyplot.show()
+dataset.hist()
+pyplot.show()
 
 
 
